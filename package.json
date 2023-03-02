@@ -1,0 +1,26 @@
+{
+  "name": "employee_generator",
+  "version": "1.0.0",
+  "description": "demostrating knowledge",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aecarena/employee-generator.git"
+  },
+  "author": "ashley curtin arena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aecarena/employee-generator/issues"
+  },
+  "homepage": "https://github.com/aecarena/employee-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
