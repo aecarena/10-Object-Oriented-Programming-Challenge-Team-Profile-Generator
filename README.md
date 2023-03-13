@@ -35,3 +35,8 @@ This is a challenge meant to demonstrate the skill set of my knowledge in buildi
 
 ### Screenshot
 This is a screenshot of the generated HTML webpage.
+
+### Video Walkthrough
+
+https://drive.google.com/file/d/190GkWai7rguTdqQTdZvBWA7S3Mgh0qe-/view
+
