@@ -1,13 +1,12 @@
-const Intern = require("./lib/Intern");
+const Intern = require("../lib/Intern");
 
 describe("Intern", () => {
   const name = "";
   const id = "";
   const email = "";
   const school = "";
-  const test = { name, id, email, school };
 
-  const intern = new Intern(test);
+  const intern = new Intern(name, id, email, school);
 
   it("Should pass the test Name value", () => {
     expect(intern.getName()).toEqual(name);

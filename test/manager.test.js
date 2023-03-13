@@ -1,13 +1,12 @@
-const Manager = require("./lib/Manager");
+const Manager = require("../lib/Manager");
 
 describe("Manager", () => {
   const name = "";
   const id = "";
   const email = "";
   const officeNum = "";
-  const test = { name, id, email, officeNum };
 
-  const manager = new Manager(test);
+  const manager = new Manager(name, id, email, officeNum);
 
   it("Should pass the test Name value", () => {
     expect(manager.getName()).toEqual(name);

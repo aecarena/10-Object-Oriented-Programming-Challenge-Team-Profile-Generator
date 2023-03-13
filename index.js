@@ -63,12 +63,12 @@ function addManager() {
 
     {
       type: "input",
-      name: "managerOfficeNumber",
+      name: "managerOfficeNum",
       message: "What is the manager's office number?"
     }
 
   ]).then(answers => {
-    const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
+    const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNum);
     teamArray.push(manager);
     createTeam();
   });
@@ -151,6 +151,8 @@ function addEngineer() {
 
 function htmlBuilder () {
     console.log("Team created!")
+    //console.log(teamArray)
+    console.log(teamArray[0].getName())
 
     fs.writeFileSync(DISTPath, generateTeam(teamArray), "UTF-8")
 

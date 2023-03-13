@@ -3,8 +3,9 @@ const generateTeam = team => {
 
     
     const generateManager = manager => {
+        console.log(manager);
         return `
-<section class="card employee-card">
+<section class="col mx-2 card employee-card">
     <div class="card-header bg-primary text-white">
         <h2 class="card-title">${manager.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${manager.getRole()}</h3>
@@ -13,7 +14,7 @@ const generateTeam = team => {
         <ul class="list-group">
             <li class="list-group-item">ID: ${manager.getId()}</li>
             <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
-            <li class="list-group-item">Office number: ${manager.getOfficeNumber()}</li>
+            <li class="list-group-item">Office number: ${manager.getOfficeNum()}</li>
         </ul>
     </div>
 </section>
@@ -23,7 +24,7 @@ const generateTeam = team => {
     
     const generateEngineer = engineer => {
         return `
-<section class="card employee-card">
+<section class="col mx-2 card employee-card">
     <div class="card-header bg-primary text-white">
         <h2 class="card-title">${engineer.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${engineer.getRole()}</h3>
@@ -42,7 +43,7 @@ const generateTeam = team => {
     
     const generateIntern = intern => {
         return `
-<section class="card employee-card">
+<section class="col mx-2 card employee-card">
     <div class="card-header bg-primary text-white">
         <h2 class="card-title">${intern.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
@@ -91,6 +92,8 @@ module.exports = team => {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Team</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="container-fluid">
@@ -102,7 +105,7 @@ module.exports = team => {
     </section>
     <section class="container">
         <div class="row">
-            <div class="row team-area col-12 d-flex justify-content-center">
+            <div class="row team-area">
                 ${generateTeam(team)}
             </div>
         </div>

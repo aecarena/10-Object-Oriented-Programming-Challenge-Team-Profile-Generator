@@ -1,13 +1,12 @@
-const Engineer = require("./lib/Engineer");
+const Engineer = require("../lib/Engineer");
 
 describe("Engineer", () => {
   const name = "";
   const id = "";
   const email = "";
   const github = "";
-  const test = { name, id, email, github };
 
-  const engineer = new Engineer(test);
+  const engineer = new Engineer(name, id, email, github);
 
   it("Should pass the testName value", () => {
     expect(engineer.getName()).toEqual(name);
